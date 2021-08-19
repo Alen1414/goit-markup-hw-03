@@ -1,0 +1,208 @@
+:root {
+  --primary-text-color: #212121;
+  --second-text-color: #2196F3;
+  --white-color-text: #FFFFFF;
+  --background-second-color: #2F303A;
+  --background-first-color:  #E5E5E5;
+  --background-therd-color: #F5F4FA;
+ } 
+
+ 
+ body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  color: #2a2a2a;
+} 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  height: 1200px;
+  background-color: ;
+}
+
+/* ------------logo------------ */ 
+ .logo {
+   color: #2196F3 ;
+   font-family: "Rolway", sans-serif;
+   font-weight: bold;
+   font-size: 26px;
+   line-height: 1.20; 
+   text-decoration: none;
+ }
+.studio {
+  color: var(--primary-text-color);
+}
+ .link {
+
+  text-decoration: none;
+  color: #000;
+ }
+
+/* ------------------site nav---------- */
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #757575;
+  }
+
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.site-nav .link.current {
+  color: #2196f3;
+}
+
+/* -------------button-общая ---------------------*/
+
+.hero-button{
+  
+font-weight: bold;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.06em;
+background: #F5F4FA;
+}
+
+.hero-button:hover{
+  color: var(--white-color-text);
+  background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero-button:focus 
+
+
+
+
+/* ---------банер герой -----------------------------*/
+.baner-colorr{
+  background-color: var(--background-second-color);
+}
+.hero-baner {
+  padding: 0;
+  margin: 0;
+ 
+font-weight: 900;
+font-size: 44px;
+line-height: 1.4;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--white-color-text);
+}
+
+
+/* -------------------фишки компании-------------- */
+.hide { display: none; }
+
+.items-company{
+font-size: 14px;
+line-height: 1.1;
+text-transform: uppercase;
+}
+
+.items-text {
+
+font-size: 14px;
+line-height: 1.7;
+color: #757575;
+text-transform: none;
+}
+.maim-section{
+ font-weight: bold;
+font-size: 36px;
+line-height: 1.16;
+
+
+}
+.about-work-photo{
+
+}
+
+.stuf-block {
+
+}
+.stuf-name {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.stuf-position {
+font-size: 16px;
+line-height: 1.18;
+}
+/* --------------------подвал--------------------*/
+ /*.adress-nav{
+ text-decoration: none; 
+}*/
+
+.footer-address{
+text-decoration: none; 
+font-size: 14px;
+line-height: 1.7;
+color: var(--white-color-text);
+}
+.footer-mail{
+text-decoration: none;  
+font-size: 14px;
+line-height: 1.7;
+color: rgba(255, 255, 255, 0.6);
+}
+.footer-tel {
+  text-decoration: none; 
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+
+}
+.footer-color{
+  background-color: var(--background-second-color);
+}
+.studio-white{
+  color: var(--white-color-text);
+}
+
+/* --------------------paje portfolio--------------------*/
+
+.button-portfoli{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+cursor: pointer;
+background-color: #F5F4FA;
+}
+
+.button-portfoli:hover
+.button-button:focus {
+  
+  background-color:var(--second-text-color);
+}
+
+/* --------------------photo--------------------*/
+
+.potfolio-items {
+
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 2x;
+
+}
+
+.name-of-itens{
+font-size: 16px;
+line-height: 1.87;
+color: #757575;
+}
