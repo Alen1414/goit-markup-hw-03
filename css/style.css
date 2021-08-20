@@ -16,17 +16,19 @@
 } 
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
 }
+/* утилиты */
 
-/* Остальной код */
+
  .container { 
-   width: 1200px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-background: yellowgreen; 
+
+  margin-left:  auto;
+  margin-right: auto;
 }
 
 /* ------------logo------------ */ 
@@ -48,21 +50,38 @@ background: yellowgreen;
  }
 
 /* ------------------site nav---------- */
-
-.site-nav {
- 
+.main-nav{
   display: flex;
+  align-items: center;
+  
+}
+.site-nav {
+  display: flex;
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #757575;
+
   }
-  .item-nav{
-    margin-right: 50px;
-    background:tomato
+   .item-nav{
+   /* display: block; */
+   display: flex;
+   margin-right: 50px;
+   padding-top: 31px;
+  padding-bottom: 31px;
+   }
+ 
+
+    .item-site {
+
+      display: flex;
+      margin-right: 50px;
+    }
 } 
-.item-nav:not(:last-child) 
+/* .item-nav:not(:last-child)   */
+
 
 
 .site-nav .link:hover,
@@ -97,43 +116,59 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 /* ---------банер герой -----------------------------*/
 .baner-colorr{
   background-color: var(--background-second-color);
+  
 }
 .hero-baner {
-  padding: 0;
-  margin: 0;
- 
+
 font-weight: 900;
 font-size: 44px;
 line-height: 1.4;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: var(--white-color-text);
+text-align: center;
+  /* color: var(--white-color-text);  */
 }
-
+  
+ /* padding: 0;
+  margin: 0; */ */
 
 /* -------------------фишки компании-------------- */
-.hide { display: none; }
+.hide {
+   display: none; }
 
 .items-company{
+
 font-size: 14px;
 line-height: 1.1;
 text-transform: uppercase;
+
+padding: 0;
+margin: 0;
+
+display: flex;
+
+margin-left: -30px;
+margin-top: -30px;
+}
+.box-items {
+flex-basis: calc(100%/4 - 30px);
+margin-left: 30px;
+margin-top: 30px;
 }
 
-.items-text {
 
+.items-text {
 font-size: 14px;
 line-height: 1.7;
 color: #757575;
 text-transform: none;
 }
 .maim-section{
- font-weight: bold;
+
+font-weight: bold;
 font-size: 36px;
 line-height: 1.16;
-
-
 }
 .about-work-photo{
 
@@ -236,10 +271,12 @@ background: yellowgreen;  */
 
 padding: 0;
 margin: 0;
+
 display: flex;
 flex-wrap: wrap;
+
 margin-left: -30px;
-  margin-top: -30px;
+margin-top: -30px;
 }
 .card-set> .item {
   
