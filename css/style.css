@@ -5,6 +5,7 @@
   --background-second-color: #2F303A;
   --background-first-color:  #E5E5E5;
   --background-therd-color: #F5F4FA;
+  --card-set-gap: -30px;
  } 
 
  
@@ -18,11 +19,14 @@ ul {
   padding: 0;
   margin: 0;
 }
-.container{
-  margin-left: auto;
-  margin-right: auto;
-  height: 1200px;
-  background-color: ;
+
+/* Остальной код */
+ .container { 
+   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+background: yellowgreen; 
 }
 
 /* ------------logo------------ */ 
@@ -46,12 +50,19 @@ ul {
 /* ------------------site nav---------- */
 
 .site-nav {
+ 
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #757575;
   }
+  .item-nav{
+    margin-right: 50px;
+    background:tomato
+} 
+.item-nav:not(:last-child) 
 
 
 .site-nav .link:hover,
@@ -174,7 +185,14 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 /* --------------------paje portfolio--------------------*/
+/* Card set */
 
+.card-set-button{
+  outline: 1px solid transparent;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
 .button-portfoli{
 font-style: normal;
 font-weight: 500;
@@ -205,4 +223,27 @@ line-height: 2x;
 font-size: 16px;
 line-height: 1.87;
 color: #757575;
+}
+
+/* .container { 
+  width: 1200px;
+ padding-left: 15px;
+ padding-right: 15px;
+ margin: 0 auto;
+background: yellowgreen;  */
+
+.card-set {
+
+padding: 0;
+margin: 0;
+display: flex;
+flex-wrap: wrap;
+margin-left: -30px;
+  margin-top: -30px;
+}
+.card-set> .item {
+  
+  flex-basis: calc(100%/3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
