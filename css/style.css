@@ -44,7 +44,7 @@ p, h1, h2, h3, h4, h5, h6 {
   padding-right: 15px;
 
  margin: 0 auto;
- outline: 1px solid tomato
+ /* outline: 1px solid tomato */
 
 }
 
@@ -172,7 +172,7 @@ padding-top: 200px;
 padding-bottom: 280px; 
 30 */
 
-background-color: tomato;
+
 width: 696px;
 height: 120px;
 
