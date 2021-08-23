@@ -7,7 +7,7 @@
   --background-therd-color: #F5F4FA;
   --card-set-gap: -30px;
  } 
-
+/* -------------------------утилиты ----------------------------*/
  
  body {
   font-family: "Roboto", sans-serif;
@@ -16,23 +16,43 @@
 } 
 ul {
   list-style: none;
-  /* padding: 0;
-  margin: 0; */
+  padding: 0;
+  margin: 0; 
 }
-/* утилиты */
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* -----------------------hide content-------------------------- */
+.hide { display: none; }
 
+/*-----------------------flash menu----------------------------- */
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.site-nav .link.current {
+  color: #2196f3;
+}
+
+/* -----------------------button-------------------------------- */
 
  .container { 
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 
-  margin-left:  auto;
-  margin-right: auto;
+ margin: 0 auto;
+ outline: 1px solid tomato
+
 }
 
 /* ------------logo------------ */ 
  .logo {
+   /* margin-left: 215px;*/
+   padding-right: 93px; 
+ 
    color: #2196F3 ;
    font-family: "Rolway", sans-serif;
    font-weight: bold;
@@ -44,57 +64,73 @@ ul {
   color: var(--primary-text-color);
 }
  .link {
+   display: block;
 
   text-decoration: none;
   color: #000;
+  padding-top: 32px;
+  padding-bottom: 32px; 
  }
 
 /* ------------------site nav---------- */
 .main-nav{
   display: flex;
   align-items: center;
-  
-}
+  }
+
 .site-nav {
   display: flex;
-  
+  align-items: center;
+  margin-left: auto;
+   /* margin-left: 93px;  */
+   
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #757575;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+}
 
-  }
    .item-nav{
-   /* display: block; */
+   display: block; 
    display: flex;
-   margin-right: 50px;
-   padding-top: 31px;
-  padding-bottom: 31px;
-   }
+   
+   /* margin-right: 50px; */
+   
+}
+
+/* .site-nav > .item-nav >.item-site:not(:last-child){
+margin-left: 50px; 
+} */
+.site-nav .item-nav {
+  margin-left: 50px;
  
-
-    .item-site {
-
+}
+ .item-site {
       display: flex;
-      margin-right: 50px;
-    }
-} 
+
+      padding-top: 31px;
+      padding-bottom: 31px;
+      margin-left: 50px;
+      }
+
+
 /* .item-nav:not(:last-child)   */
 
 
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
-}
-.site-nav .link.current {
-  color: #2196f3;
-}
-
 /* -------------button-общая ---------------------*/
 
 .hero-button{
+display: block; 
+
+margin-left: auto; 
+margin-right: auto; 
   
 font-weight: bold;
 font-size: 16px;
@@ -102,6 +138,7 @@ line-height: 1.9;
 letter-spacing: 0.06em;
 background: #F5F4FA;
 }
+
 
 .hero-button:hover{
   color: var(--white-color-text);
@@ -113,12 +150,31 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 
 
-/* ---------банер герой -----------------------------*/
-.baner-colorr{
-  background-color: var(--background-second-color);
-  
-}
+/* ------------------------банер герой -----------------------------*/
+
+.baner-color{
+ background-color: var(--background-second-color); 
+ /* height: 600px; */
+  width: auto;
+  display: block
+  align-items: center;
+  padding-bottom: 94px;
+  }
+
 .hero-baner {
+display: block;
+text-align: center;
+
+margin-left: auto;
+margin-right: auto;
+
+padding-top: 200px;
+padding-bottom: 280px; 
+30 */
+
+background-color: tomato;
+width: 696px;
+height: 120px;
 
 font-weight: 900;
 font-size: 44px;
@@ -126,16 +182,24 @@ line-height: 1.4;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-text-align: center;
-  /* color: var(--white-color-text);  */
+ /* color: var(--white-color-text);  */
 }
-  
- /* padding: 0;
-  margin: 0; */ */
+
+.hero-baner .hero-button{
+  padding-top: ;
+  padding-bottom: 200px;
+}
 
 /* -------------------фишки компании-------------- */
-.hide {
-   display: none; }
+.maim-section{
+  display: flex;
+  justify-content: center;
+  
+ }
+.title-photo{
+  padding-bottom: 50px;
+ 
+}
 
 .items-company{
 
@@ -157,27 +221,77 @@ margin-left: 30px;
 margin-top: 30px;
 }
 
+.company-list{
+  padding-bottom: 10px;
 
+}
 .items-text {
 font-size: 14px;
 line-height: 1.7;
 color: #757575;
 text-transform: none;
+padding-bottom: 94px;
 }
 .maim-section{
-
 font-weight: bold;
 font-size: 36px;
 line-height: 1.16;
 }
-.about-work-photo{
 
-}
+.photo-list{
+  display: flex;
+  flex: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  padding-bottom: 94px;
+ }
+
+ .photo-box{
+  width: 370px;
+  /* height: 294px; */
+  flex-basis: ((100% - 3*30px)/3);
+  margin-left: 30px;
+  margin-top: 30px;
+ }
+
+ /* -------------------stuf foto------------------ */
 
 .stuf-block {
+  display: flex;
+  flex: wrap;
 
-}
+  padding: 0;
+  margin: 0;
+
+  margin-left: -30px;
+  margin-top: -30px;
+
+  padding-bottom: 94px;
+  
+ }
+ 
+ .photo-stuf {
+     
+      /* display: block; */
+      flex-basis: ((100% - 4*30px)/4);
+      margin-left: 30px;
+      margin-top: 30px;
+      border-radius: 0px 0px 4px 4px;
+  }
+  
+  .title-stuf{
+  text-align: center;
+  padding: auto;
+ 
+  padding-top: 94px;
+  padding-bottom: 50px ;
+  }
+
+  
 .stuf-name {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 
   font-style: normal;
   font-weight: 500;
@@ -185,14 +299,40 @@ line-height: 1.16;
   line-height: 1.18;
 }
 .stuf-position {
+text-align: center;
+margin-bottom: 30px;
 font-size: 16px;
 line-height: 1.18;
+
 }
 /* --------------------подвал--------------------*/
  /*.adress-nav{
  text-decoration: none; 
 }*/
+.l-items{
+  display: block;
+  padding-top: 60px;
+  padding-left: 215px;
+}
 
+.address-items{
+  display: block;
+  padding-top: 20px;
+  padding-left: 215px;
+  }
+
+.malto-items{
+  display: block;
+  padding-top: 9px;
+  padding-left: 215px;
+}
+
+.phone-items{
+  display: block;
+  padding-top: 9px;
+  padding-left: 215px;
+  padding-bottom: 60px;
+}
 .footer-address{
 text-decoration: none; 
 font-size: 14px;
@@ -223,19 +363,54 @@ color: rgba(255, 255, 255, 0.6);
 /* Card set */
 
 .card-set-button{
-  outline: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* outline: 1px solid transparent; */
   padding: 0;
   margin: 0;
-  display: flex;
+  padding-bottom: 50px;
+  padding-top: 94px;
+ 
+ 
+ 
 }
 .button-portfoli{
+margin-right: 8px;
+height: 38px;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
 cursor: pointer;
 background-color: #F5F4FA;
+border-radius: 4px;
+border: 1px solid transparent;
+
 }
+.button-all{
+  width: 73px;
+  
+
+}
+.button-veb {
+    width: 128px;
+ 
+}
+.button-aplic {
+  width: 145px;
+
+}
+
+.button-design {
+  width: 103px;
+
+}
+.button-market{
+  width: 130px;
+
+}
+ 
 
 .button-portfoli:hover
 .button-button:focus {
@@ -247,6 +422,8 @@ background-color: #F5F4FA;
 
 .potfolio-items {
 
+padding-top: 20px;
+
 font-style: normal;
 font-weight: bold;
 font-size: 18px;
@@ -255,6 +432,9 @@ line-height: 2x;
 }
 
 .name-of-itens{
+  padding-top: 4px;
+  margin-bottom: 20px;
+
 font-size: 16px;
 line-height: 1.87;
 color: #757575;
