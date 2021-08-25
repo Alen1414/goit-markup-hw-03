@@ -145,7 +145,7 @@ background: #F5F4FA;
 }
 
 .hero-button:focus 
-.hero-button:hover{
+.hero-button:hover {
   color: var(--white-color-text);
   background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -156,39 +156,25 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 
 /* ------------------------банер герой -----------------------------*/
+.hero{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--background-second-color); 
+}
 
-.baner-color{
- background-color: var(--background-second-color); 
- /* height: 600px; */
- 
-  width: auto;
-  display: block
-
-  /* padding-top: 200px; */
-  
-  /* padding-bottom: 94px; */
-  /* padding-top: 200px; */
-  /* padding-bottom: 30px;  */
-  }
 
 .hero-baner {
+  display: block;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 30px;
- 
-
-margin-left: auto;
-margin-right: auto;
-
-/* width: 696px;
-height: 120px; */
-
+  
+  margin-bottom: 30px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.4;
 letter-spacing: 0.06em;
 text-transform: uppercase;
- color: var(--white-color-text); 
+
+color: var(--white-color-text); 
 }
 
 /* -------------------фишки компании-------------- */
