@@ -8,7 +8,7 @@
   --card-set-gap: -30px;
  } 
 /* -------------------------утилиты ----------------------------*/
- 
+
  body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -55,8 +55,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
  .logo {
-   /* margin-left: 215px;*/
-   padding-right: 93px; 
+  margin-right: 93px;
+ 
  
    color: #2196F3 ;
    font-family: "Rolway", sans-serif;
@@ -86,10 +86,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .site-nav {
   display: flex;
   align-items: center;
-  margin-left: auto;
-   /* margin-left: 93px;  */
-   
-
+ 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -99,67 +96,33 @@ p, h1, h2, h3, h4, h5, h6 {
 .flex-center{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
    .item-nav{
    display: block; 
    display: flex;
-   
-   /* margin-right: 50px; */
-   
-}
+   }
+   .site-nav .item-nav {
+    margin-left: 50px;
+   }
+   .site-nav .item-nav:first-child {
+    margin-left: 0px; 
+    } 
 
-/* .site-nav > .item-nav >.item-site:not(:last-child){
-margin-left: 50px; 
-} */
-.site-nav .item-nav {
-  margin-left: 50px;
- 
-}
  .item-site {
       display: flex;
-
-      padding-top: 31px;
-      padding-bottom: 31px;
       margin-left: 50px;
       }
-
-
-/* .item-nav:not(:last-child)   */
-
-
-
-/* -------------button-общая ---------------------*/
-
-.hero-button{
-display: block; 
-
-margin-left: auto; 
-margin-right: auto; 
-  
-font-weight: bold;
-font-size: 16px;
-line-height: 1.9;
-letter-spacing: 0.06em;
-background: #F5F4FA;
-}
-
-.hero-button:focus 
-
-.hero-button:hover {
-  color: var(--white-color-text);
-  background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-
-
-
-
 /* ------------------------банер герой -----------------------------*/
 .hero{
   padding-top: 200px;
   padding-bottom: 200px;
+ 
+  padding-left: 0px;
+  padding-right: 0px;
+
+  margin-bottom: 94px;
   background-color: var(--background-second-color); 
 }
 
@@ -167,27 +130,73 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .hero-baner {
   display: block;
   text-align: center;
-  
-  margin-bottom: 30px;
+
+ margin-left: 0 auto; 
+ margin-right: 0 auto;
+ margin-bottom: 30px;
+ 
+max-width: 650px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.4;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-text-transform: none;
+
 
 
 color: var(--white-color-text); 
 }
 
+/* -------------button-hero---------------------*/
+
+.hero-button{
+ display: flex;
+align-items: center;
+text-align: center;
+
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 32px;
+padding-right: 32px;
+  
+  margin-left: auto; 
+  margin-right: auto; 
+    
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 38px;
+  letter-spacing: 0.06em;
+  background: #F5F4FA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ border-radius: 4px;
+ border: none;
+
+position: absolute;
+height: 50px;
+left: 700px;
+top: 430px;
+  }
+  
+  
+  .hero-button:focus,
+  
+  .hero-button:hover {
+    color: var(--white-color-text);
+    background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+
 /* -------------------фишки компании-------------- */
 .maim-section{
   display: flex;
   justify-content: center;
-  
- }
+  margin-bottom: 94px;
+  }
+
 .title-photo{
   padding-bottom: 50px;
+  text-align: center;
  
 }
 
@@ -246,6 +255,9 @@ line-height: 1.16;
 
  /* -------------------stuf foto------------------ */
 
+ .fone{
+  background: #F5F4FA;
+ }
 .stuf-block {
   display: flex;
   flex: wrap;
@@ -261,12 +273,11 @@ line-height: 1.16;
  }
  
  .photo-stuf {
-     
-      /* display: block; */
       flex-basis: ((100% - 4*30px)/4);
       margin-left: 30px;
       margin-top: 30px;
       border-radius: 0px 0px 4px 4px;
+      background: #FFFFFF;
   }
   
   .title-stuf{
@@ -275,6 +286,7 @@ line-height: 1.16;
  
   padding-top: 94px;
   padding-bottom: 50px ;
+  
   }
 
   
@@ -296,32 +308,25 @@ line-height: 1.18;
 
 }
 /* --------------------подвал--------------------*/
- /*.adress-nav{
- text-decoration: none; 
-}*/
+
 .l-items{
   display: block;
-  padding-top: 60px;
-  padding-left: 215px;
+ 
 }
 
 .address-items{
   display: block;
   padding-top: 20px;
-  padding-left: 215px;
   }
 
 .malto-items{
   display: block;
   padding-top: 9px;
-  padding-left: 215px;
 }
 
 .phone-items{
   display: block;
   padding-top: 9px;
-  padding-left: 215px;
-  padding-bottom: 60px;
 }
 .footer-address{
 text-decoration: none; 
@@ -343,6 +348,10 @@ color: rgba(255, 255, 255, 0.6);
 
 }
 .footer-color{
+  display: block;
+  
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-second-color);
 }
 .studio-white{
@@ -350,8 +359,15 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 /* --------------------paje portfolio--------------------*/
-/* Card set */
 
+/* ---------------------Card set------------------ */
+.card{
+  
+  background: #FFFFFF;
+  border-bottom: 1px solid #EEEEEE;
+  box-sizing: border-box;
+
+}
 .card-set-button{
   display: flex;
   align-items: center;
@@ -361,10 +377,9 @@ color: rgba(255, 255, 255, 0.6);
   margin: 0;
   padding-bottom: 50px;
   padding-top: 94px;
+  
+ }
  
- 
- 
-}
 .button-portfoli{
 margin-right: 8px;
 height: 38px;
@@ -376,8 +391,13 @@ cursor: pointer;
 background-color: #F5F4FA;
 border-radius: 4px;
 border: 1px solid transparent;
-
 }
+.button-portfoli:hover, 
+.button-button:focus {
+  
+  background-color:var(--second-text-color);
+}
+
 .button-all{
   width: 73px;
   
@@ -401,18 +421,13 @@ border: 1px solid transparent;
 
 }
  
-
-.button-portfoli:hover
-.button-button:focus {
-  
-  background-color:var(--second-text-color);
-}
-
 /* --------------------photo--------------------*/
 
 .potfolio-items {
 
 padding-top: 20px;
+padding-right: 24px;
+
 
 font-style: normal;
 font-weight: bold;
@@ -423,19 +438,13 @@ line-height: 2x;
 
 .name-of-itens{
   padding-top: 4px;
+  padding-right: 24px;
   margin-bottom: 20px;
 
 font-size: 16px;
 line-height: 1.87;
 color: #757575;
 }
-
-/* .container { 
-  width: 1200px;
- padding-left: 15px;
- padding-right: 15px;
- margin: 0 auto;
-background: yellowgreen;  */
 
 .card-set {
 
@@ -453,4 +462,5 @@ margin-top: -30px;
   flex-basis: calc(100%/3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  margin-bottom: 94px;
 }
