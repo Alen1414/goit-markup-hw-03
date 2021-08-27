@@ -35,7 +35,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .site-nav .link.current {
   color: #2196f3;
 }
-
+  
 /* -----------------------button-------------------------------- */
 
  .container { 
@@ -49,9 +49,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------logo------------ */ 
-.line-header{
-  
- border-bottom: 1px solid #ECECEC;
+.line {
+  border-bottom: 1px solid #ECECEC;
 }
 
  .logo {
@@ -78,6 +77,7 @@ p, h1, h2, h3, h4, h5, h6 {
  }
 
 /* ------------------site nav---------- */
+
 .main-nav{
   display: flex;
   align-items: center;
@@ -91,7 +91,6 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #757575;
 }
 .flex-center{
   display: flex;
@@ -103,6 +102,7 @@ p, h1, h2, h3, h4, h5, h6 {
    display: block; 
    display: flex;
    }
+  
    .site-nav .item-nav {
     margin-left: 50px;
    }
@@ -113,9 +113,17 @@ p, h1, h2, h3, h4, h5, h6 {
  .item-site {
       display: flex;
       margin-left: 50px;
+      
       }
+      .item-color{
+     color: #757575;
+      }
+      .active {
+        color:  #2196F3;
+        }
 /* ------------------------банер герой -----------------------------*/
 .hero{
+  
   padding-top: 200px;
   padding-bottom: 200px;
  
@@ -160,8 +168,6 @@ padding-left: 32px;
 padding-right: 32px;
   
 margin: 0 auto;
-  /* margin-left: auto; 
-  margin-right: auto;  */
     
   font-weight: bold;
   font-size: 16px;
@@ -173,10 +179,9 @@ margin: 0 auto;
   border-radius: 4px;
  border: none;
 
-position: absolute;
+
 height: 50px;
-left: 700px;
-top: 430px;
+
   }
   
   
@@ -187,8 +192,13 @@ top: 430px;
     background: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-  
 
+  .button-button:focus,
+  .button-portfoli:hover{
+    color: var(--white-color-text);
+  background-color:var(--second-text-color);
+    }
+    
 /* -------------------фишки компании-------------- */
 .mj{
   margin-bottom: 94px;
@@ -399,11 +409,7 @@ background-color: #F5F4FA;
 border-radius: 4px;
 border: 1px solid transparent;
 }
-.button-portfoli:hover, 
-.button-button:focus {
-  
-  background-color:var(--second-text-color);
-}
+
 
 .button-all{
   width: 73px;
